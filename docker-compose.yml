@@ -23,7 +23,7 @@ services:
       - tokens:/tokens ## volume to save TGTG credentials to reuse on next start up and avoid login mail
 
     ports:
-      - 3005:3000
+      - 3005:3005
 
 volumes:
   tokens:

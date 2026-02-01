@@ -11,11 +11,10 @@ services:
       # For more options and details visit https://github.com/Der-Henning/tgtg/wiki/Configuration
 
       - TGTG_USERNAME=
-      - SLEEP_TIME=60
-      - TZ=Europe/Berlin
-      - LOCALE=de_DE
-      - PORT=3000
-
+      - SLEEP_TIME=
+      - TZ=
+      - LOCALE=
+      - PORT=
       - TELEGRAM=true
       - TELEGRAM_TOKEN=
       - TELEGRAM_CHAT_IDS=
@@ -24,7 +23,7 @@ services:
       - tokens:/tokens ## volume to save TGTG credentials to reuse on next start up and avoid login mail
 
     ports:
-      - 3005:3000
+      - 8080:3000
 
 volumes:
   tokens:
